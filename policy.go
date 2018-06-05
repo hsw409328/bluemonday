@@ -439,6 +439,9 @@ func (p *Policy) addDefaultElementsWithoutAttrs() {
 	p.init()
 
 	p.setOfElementsAllowedWithoutAttrs["p"] = struct{}{}
+	p.setOfElementsAllowedWithoutAttrs["br"] = struct{}{}
+	p.setOfElementsAllowedWithoutAttrs["font"] = struct{}{}
+	p.setOfElementsAllowedWithoutAttrs["span"] = struct{}{}
 	p.setOfElementsAllowedWithoutAttrs["u"] = struct{}{}
 	p.setOfElementsAllowedWithoutAttrs["i"] = struct{}{}
 	p.setOfElementsAllowedWithoutAttrs["a"] = struct{}{}
