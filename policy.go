@@ -448,6 +448,13 @@ func (p *Policy) addDefaultElementsWithoutAttrs() {
 	p.setOfElementsAllowedWithoutAttrs["img"] = struct{}{}
 	p.setOfElementsAllowedWithoutAttrs["strike"] = struct{}{}
 	p.setOfElementsAllowedWithoutAttrs["b"] = struct{}{}
+	p.setOfElementsAllowedWithoutAttrs["table"] = struct{}{}
+	p.setOfElementsAllowedWithoutAttrs["tr"] = struct{}{}
+	p.setOfElementsAllowedWithoutAttrs["td"] = struct{}{}
+	p.setOfElementsAllowedWithoutAttrs["th"] = struct{}{}
+	p.setOfElementsAllowedWithoutAttrs["thread"] = struct{}{}
+	p.setOfElementsAllowedWithoutAttrs["tbody"] = struct{}{}
+	p.setOfElementsAllowedWithoutAttrs["class"] = struct{}{}
 
 }
 
