@@ -208,5 +208,5 @@ func TestUGCPolicy(t *testing.T) {
 func TestStripTagsPolicy(t *testing.T) {
 
 	p := UGCPolicy()
-	log.Println(p.Sanitize("<table class=\"123123123\"><br><tr><td></td></tr></table><img src='123123' class=123123123>"))
+	log.Println(p.Sanitize("<table class=\"123-123123\"><br><tr><td></td></tr></table><img src='123123' class=123123123>"))
 }

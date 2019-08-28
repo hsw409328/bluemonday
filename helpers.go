@@ -250,7 +250,7 @@ func (p *Policy) AllowTables() {
 
 	// "table" is permitted
 	p.AllowAttrs("height", "width").Matching(NumberOrPercent).OnElements("table")
-	p.AllowAttrs("class").Matching(NumberOrPercent).OnElements("table")
+	p.AllowAttrs("class").Matching(Paragraph).OnElements("table")
 	p.AllowAttrs("summary").Matching(Paragraph).OnElements("table")
 
 	// "caption" is permitted
