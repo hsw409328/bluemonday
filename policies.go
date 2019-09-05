@@ -133,7 +133,11 @@ func UGCPolicy() *Policy {
 	p.AllowAttrs("cite").OnElements("blockquote")
 
 	// "br" "div" "hr" "p" "span" "wbr" are permitted and take no attributes
-	p.AllowElements("br", "div", "hr", "p", "span", "wbr")
+	p.AllowElements("br", "div", "hr", "p", "span", "wbr", "pre")
+
+	// "p" is permitted
+	p.AllowAttrs("style").OnElements("p", "b", "div", "span", "pre")
+	p.AllowAttrs("class").OnElements("p", "b", "div", "span", "pre")
 
 	///////////
 	// Links //
@@ -141,6 +145,7 @@ func UGCPolicy() *Policy {
 
 	// "a" is permitted
 	p.AllowAttrs("href").OnElements("a")
+	p.AllowAttrs("_blank").OnElements("a")
 
 	// "area" is permitted along with the attributes that map image maps work
 	p.AllowAttrs("name").Matching(

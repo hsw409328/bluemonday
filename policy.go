@@ -455,6 +455,7 @@ func (p *Policy) addDefaultElementsWithoutAttrs() {
 	p.setOfElementsAllowedWithoutAttrs["thread"] = struct{}{}
 	p.setOfElementsAllowedWithoutAttrs["tbody"] = struct{}{}
 	p.setOfElementsAllowedWithoutAttrs["class"] = struct{}{}
+	p.setOfElementsAllowedWithoutAttrs["pre"] = struct{}{}
 
 }
 
